@@ -1,0 +1,3 @@
+# Liturgy Search
+
+<LiturgySearch />
