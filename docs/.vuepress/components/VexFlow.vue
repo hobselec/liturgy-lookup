@@ -9,12 +9,12 @@
 // set note spacing?
 // setExtraLeftPx()
 
-//const Vex = require('vexflow');
-import Vex from 'vexflow'
+import { Vex, Stave, StaveNote, Formatter, Dot } from 'vexflow'
 
 const VF = Vex.Flow;
 
 import Liturgy from '../public/liturgy.json';
+
 
 export default {
   name: 'VexFlow',
@@ -104,16 +104,19 @@ this.scoreMeasures.forEach((measure, index) => {
     let beats = 0;
     let notes = [];
     let numNotes = measure.notes.length;
+    let noteLength = 0
 
     measure.notes.forEach((note) => {
 
-        beats += beatDurations[note.duration];
+        noteLength = note.duration.split('r')[0]
+
+        beats += beatDurations[noteLength];
 
         let dots = 0;
         if(typeof note.dots != 'undefined')
         {
             dots = note.dots;
-            let dotAddition = beatDurations[note.duration]/2;
+            let dotAddition = beatDurations[noteLength]/2;
 
             if(dots == 2)
               beats += dotAddition/2;
@@ -135,10 +138,17 @@ this.scoreMeasures.forEach((measure, index) => {
             // stem_direction : 1 or -1
 
         if(dots > 0)
-            sn.addDotToAll();
+        {
+            const dot = new Dot();
+            dot.setDotShiftY(sn.glyph.dot_shiftY);
+            sn.addModifier(dot, 0);
+            
+        }
+            //sn.addDotToAll();
 
         if(typeof note.text != 'undefined')
-            sn.addAnnotation(0, new VF.Annotation(note.text).setVerticalJustification(VF.Annotation.VerticalJustify.BOTTOM))
+            sn.addModifier(new VF.Annotation(note.text).setVerticalJustification(VF.Annotation.VerticalJustify.BOTTOM), 0)
+            //sn.addAnnotation(0, new VF.Annotation(note.text).setVerticalJustification(VF.Annotation.VerticalJustify.BOTTOM))
 
         if(typeof note.stem != 'undefined')
         {
@@ -193,7 +203,7 @@ this.scoreMeasures.forEach((measure, index) => {
     // adjust stave for number of beats to give a better weighting
     width += beats*5;
     stave.setWidth(width);
-
+console.log(beats)
     //console.log('beats: ' + beats);
 
     // Create a voice in 4/4 and add above notes

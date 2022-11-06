@@ -43,9 +43,9 @@
         ], "ties" :[[0,1]]}
     ]},
 
-    { "id" : 4, "name" : "Kyrie", "source" : "Now the Feast", "page" : "", "score" : 
+    { "id" : 4, "name" : "Kyrie", "source" : "Now the Feast", "page" : "ELW 157", "score" : 
         [{"key": "G", "time":"2/4", "notes" : [
-          { "key": "b/4/r","duration" : "q"},
+          { "key": "b/4","duration" : "qr"},
           { "key": "e/4","duration" : "q", "text" : "In"}
         ]},
         {
@@ -67,7 +67,7 @@
 
         ]
     },
-    { "id" : 5, "name" : "Kyrie", "source" : "ELW Setting no. 4", "page" : "", "score" : 
+    { "id" : 5, "name" : "Kyrie", "source" : "ELW Setting no. 4", "page" : "24", "score" : 
         [{"key": "C", "notes" : [
           { "key": "a/4","duration" : "1/2", "text" : "In peace, let us pray to"},
           { "key": "g/4","duration" : "q", "text" : "the"},
@@ -255,7 +255,56 @@
 
       
       ]
-    }
+    },
 
+    { "id" : 16, "name" : "This is the Feast", "source" : "ELW Setting no. 3", "page" : "42?", "score" : 
+      [{"key": "D", "notes" : [
+        { "key": "b/4","duration" : "qr"},
+        { "key": "d/5","duration" : "q", "text" : "This"},
+        { "key": "c/5","duration" : "q", "text" : "is"},
+        { "key": "d/5","duration" : "q", "text" : "the"}
+        ]},
+       {"notes":[
+      { "key": "b/4","duration" : "q", "text" : "feast"},
+      { "key": "a/4","duration" : "8", "text" : ""},
+      { "key": "g/4","duration" : "8", "text" : ""},
+      { "key": "a/4","duration" : "q", "text" : ""},
+      { "key": "d/4","duration" : "q", "text" : "of"}
+    ], "beams" : [[1,2]], "ties" : [[0,3]] }
+
+      ]
+    },
+
+    { "id" : 17, "name" : "Psalm tone 5", "source" : "ELW", "page" : "215?", "score" :[
+      {"key": "E", "notes" : [
+        { "key": "a/4",  "duration" : "w",  "stem": "hide", "text" : "i"},
+        { "key": "g/4",  "duration" : "q",  "stem": "hide"},
+        { "key": "f/4",  "duration" : "q",  "stem": "hide"},
+        { "key": "g/4",  "duration" : "h",  "stem": "hide", "text" : "ii6"}
+      ]},{"notes" : [
+        { "key": "e/4",  "duration" : "w",  "stem": "hide", "text" : "v"},
+        { "key": "f/4",  "duration" : "q",  "stem": "hide"},
+        { "key": "g/4",  "duration" : "q",  "stem": "hide"},
+        { "key": "f/4",  "duration" : "h",  "stem": "hide", "text" : "i"}
+    ] }
+
+    ]}
+    ,
+    { "id" : 18, "name" : "Lamb of God", "source" : "ELW", "page" : "?", "score" :
+      [{"key": "D", "notes" :  
+        [{"key": "f/4", "duration" : "h", "dots" : 1, "text" : "Lamb"},
+        {"key": "g/4", "duration" : "q", "text" : "of"}
+        ]}, 
+        { "notes" : [
+        {"key": "a/4", "duration" : "h", "dots": 1, "text" : "God,"},
+        {"key": "a/4", "duration" : "q", "text" : "you"}
+        ]}, 
+        { "notes" :  
+        [{"key": "g/4", "duration" : "q", "text" : "take"},
+        {"key": "a/4", "duration" : "q", "text" : "a -"},
+        { "key": "f/4", "duration" : "q", "text" : "way"},
+        { "key": "g/4", "duration" : "q", "text" : "the"}
+        ]}]
+    }
 
 ]

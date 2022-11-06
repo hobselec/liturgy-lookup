@@ -1,24 +1,30 @@
 
 # Current Service
 
-### Fall 2021
+### Fall 2022
 
-This page describes the standard components of the liturgy that do not change week to week.  This is mostly setting #1 from the LBW (setting #3 from ELW). Refer to a bulletin for the placement of the hymns.
+This page describes the standard components of the liturgy that do not change week to week.  This is mostly setting #2 from the LBW (setting #4 from ELW). Refer to a bulletin for the placement of the hymns.
 <!--
 We are using *Setting 10* from [*ELW*](sources.md#elw), but the Great Thanksgiving is from [*Now The Feast*](sources.md#now-the-feast).  The Lamb of God is from ELW setting 3.
 -->
 
 ## Kyrie
 
+<VexFlow :score-id="5" :system-width="720" />
+
+<!--
+From [*ELW #4*](sources.html#elw)
+-->
+
+<!--
 ::: tip
 This has not been used
 :::
+-->
 
-## Hymn of Response:  We are Waiting for Jesus
+## Hymn of Praise
 
-<VexFlow :score-id="14" :system-width="720" />
-
-From [*ACS #905*](sources.html#all-creation-sings)
+<VexFlow :score-id="7" :system-width="720" />
 
 
 
@@ -42,6 +48,7 @@ From [*ACS #905*](sources.html#all-creation-sings)
 />
 -->
 
+<!--
 <VexFlow :measures="[{key: 'Bb', notes : [
     { key: 'b/4', duration : '1/2', stem: 'hide'},
     { key: 'g/4', duration : 'q', stem: 'hide'},
@@ -57,12 +64,34 @@ From [*ACS #905*](sources.html#all-creation-sings)
 ] }]"
 :system-width="700"
 />
+-->
+<!--
+<VexFlow :measures="[{key: 'D', notes : [
+    { key: 'a/4', duration : '1/2', stem: 'hide'},
+    { key: 'd/4', duration : 'q', stem: 'hide'},
+    { key: 'e/4', duration : 'q', stem: 'hide'},
+    { key: 'f/4', duration : 'h', stem: 'hide'}
+    ]},
+    {
+    notes : [
+    { key: 'g/4', duration : '1/2', stem: 'hide'},
+    { key: 'f/4', duration : 'q', stem: 'hide'},
+    { key: 'g/4', duration : 'q', stem: 'hide'},
+    { key: 'e/4', duration : 'h', stem: 'hide'},
+] }]"
+:system-width="750"
+/>
+-->
+Psalm tone #5
+
+<VexFlow :score-id="17" :system-width="720" />
+
 
 Psalms are located beginning on page 214 of the ELW liturgy book
 
 ## Gospel Acclamation
 
-Alleluia from LBW setting #1, page 28-30?
+Alleluia from current setting
 
 ## Gospel
 
@@ -114,8 +143,10 @@ This also is played after the gospel is read
 
 ## Communion
 
-<VexFlow :score-id="15" :system-width="720" />
+<VexFlow :score-id="18" :system-width="720" />
 
-```This is from setting 1, page ? of the LBW liturgy```
+<!--
+```This is from setting 3, page ? of the ELW liturgy```
+-->
 
 Communion consists of two hymns.
