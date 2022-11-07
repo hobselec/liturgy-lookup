@@ -5,7 +5,7 @@
   "scripts": {
     "lint": "vue-cli-service lint",
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build"
   },
   "dependencies": {
     "core-js": "^2.6.12",
