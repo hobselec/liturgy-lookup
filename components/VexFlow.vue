@@ -139,9 +139,11 @@ this.scoreMeasures.forEach((measure, index) => {
 
         if(dots > 0)
         {
-            const dot = new Dot();
-            dot.setDotShiftY(sn.glyph.dot_shiftY);
-            sn.addModifier(dot, 0);
+            //const dot = new Dot();
+            
+            //dot.setDotShiftY(sn.glyph.dot_shiftY);
+            Dot.buildAndAttach([sn], { all : true })
+            //sn.addModifier(dot, 0);
             
         }
             //sn.addDotToAll();
@@ -203,7 +205,7 @@ this.scoreMeasures.forEach((measure, index) => {
     // adjust stave for number of beats to give a better weighting
     width += beats*5;
     stave.setWidth(width);
-console.log(beats)
+    //console.log(beats)
     //console.log('beats: ' + beats);
 
     // Create a voice in 4/4 and add above notes
