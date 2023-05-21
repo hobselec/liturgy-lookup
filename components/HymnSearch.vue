@@ -25,7 +25,7 @@
 
 <script>
 import fz from 'fuzzaldrin-plus';
-import Hymns from '../public/elw-hymns.json';
+import Hymns from '../src/elw-hymns.json';
 
 export default {
   name: 'HymnSearch',

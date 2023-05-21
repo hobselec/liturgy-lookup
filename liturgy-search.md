@@ -1,3 +1,7 @@
+<script setup>
+import LiturgySearch from './components/LiturgySearch.vue'
+</script>
+
 # Liturgy Search
 
-<LiturgySearch />
+<liturgy-search />

@@ -8,7 +8,7 @@
     <div v-for="result in results" :key="result.id" class="music-result">
         <code>{{ result.name }}</code>
         <code>from {{ result.source }}, page {{ result.page }}</code>
-        <VexFlow :measures="result.score" :score-id="result.id" :system-width="700" />
+        <vex-flow :measures="result.score" :score-id="result.id" :system-width="700" />
         
     </div>
     
@@ -18,9 +18,8 @@
 
 <script>
 
-//const Vex = require('vexflow');
-//const VF = Vex.Flow;
-import Liturgy from '../public/liturgy.json';
+import VexFlow from './VexFlow.vue'
+import Liturgy from '../src/liturgy.json';
 
 export default {
   name: 'LiturgySearch',
@@ -29,6 +28,9 @@ export default {
       query : '',
       options : Liturgy
     }
+  },
+  components : {
+    VexFlow
   },
   props : {
   },
