@@ -5,32 +5,32 @@ import VexFlow from './components/VexFlow.vue'
 
 # Current Service
 
-### Fall 2022
+### Summer 2023
 
-This page describes the standard components of the liturgy that do not change week to week.  This is mostly setting #2 from the LBW (setting #4 from ELW). Refer to a bulletin for the placement of the hymns.
+This page describes the standard components of the liturgy that do not change week to week.  This is mostly setting #1 from the LBW (setting #3 from ELW). Refer to a bulletin for the placement of the hymns.
 <!--
 We are using *Setting 10* from [*ELW*](sources.md#elw), but the Great Thanksgiving is from [*Now The Feast*](sources.md#now-the-feast).  The Lamb of God is from ELW setting 3.
 -->
 
 ## Kyrie
 
-<VexFlow :score-id="5" :system-width="720" />
+<!--<VexFlow :score-id="5" :system-width="720" />-->
 
 <!--
 From [*ELW #4*](sources.html#elw)
 -->
 
-<!--
+
 ::: tip
 This has not been used
 :::
--->
+
 
 ## Hymn of Praise
 
-<VexFlow :score-id="7" :system-width="720" />
+<VexFlow :score-id="13" :system-width="720" />
 
-
+```From Now the Feast and Celebration, ELW #167```
 
 ## Psalm
 
@@ -86,12 +86,12 @@ This has not been used
 :system-width="750"
 />
 -->
-Psalm tone #5
+Psalm tone #9
 
-<VexFlow :score-id="17" :system-width="720" />
+<VexFlow :score-id="19" :system-width="720" />
 
 
-Psalms are located beginning on page 214 of the ELW liturgy book
+```Psalms are located beginning on page 214 of the ELW liturgy book```
 
 ## Gospel Acclamation
 
@@ -147,7 +147,7 @@ This also is played after the gospel is read
 
 ## Communion
 
-<VexFlow :score-id="18" :system-width="720" />
+<VexFlow :score-id="15" :system-width="720" />
 
 <!--
 ```This is from setting 3, page ? of the ELW liturgy```
