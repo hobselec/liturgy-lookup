@@ -13,12 +13,12 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'Examples',
+        //text: 'Examples',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' },
+        //  { text: 'Markdown Examples', link: '/markdown-examples' },
+        //  { text: 'Runtime API Examples', link: '/api-examples' },
           { text: 'Home', link :'/'},
-          { text: 'Search', link :'/search'},
+          { text: 'Hymn Search', link :'/search'},
           { text: 'Liturgy Search', link : '/liturgy-search'},
           { text: 'Current Service', link :'/current-service'},
           { text: 'Sources', link :'/sources'},
