@@ -30,6 +30,10 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/hobselec/liturgy-lookup' }
-    ]
+    ],
+
+    footer : {
+      message : "Last updated May 21, 2023"
+    }
   }
 })
