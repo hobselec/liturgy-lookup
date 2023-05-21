@@ -1,0 +1,29 @@
+{
+  "hash": "96f54f94",
+  "browserHash": "a6010ca5",
+  "optimized": {
+    "vue": {
+      "src": "../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "b301458f",
+      "needsInterop": false
+    },
+    "@theme/index": {
+      "src": "../../../node_modules/vitepress/dist/client/theme-default/index.js",
+      "file": "@theme_index.js",
+      "fileHash": "526b730b",
+      "needsInterop": false
+    },
+    "vexflow": {
+      "src": "../../../node_modules/vexflow/build/esm/entry/vexflow.js",
+      "file": "vexflow.js",
+      "fileHash": "72584c84",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-JC4IRQUL": {
+      "file": "chunk-JC4IRQUL.js"
+    }
+  }
+}
