@@ -275,7 +275,7 @@
       ]
     },
 
-    { "id" : 17, "name" : "Psalm tone 5", "source" : "ELW", "page" : "215?", "score" :[
+    { "id" : 17, "name" : "Psalm tone 5", "source" : "ELW", "page" : "215", "score" :[
       {"key": "E", "notes" : [
         { "key": "a/4",  "duration" : "w",  "stem": "hide", "text" : "i"},
         { "key": "g/4",  "duration" : "q",  "stem": "hide"},
@@ -305,6 +305,21 @@
         { "key": "f/4", "duration" : "q", "text" : "way"},
         { "key": "g/4", "duration" : "q", "text" : "the"}
         ]}]
-    }
+    },
+
+    { "id" : 19, "name" : "Psalm tone #9", "source" : "ELW", "page" : "216", "score" :[
+      {"key": "F", "notes" : [
+        { "key": "a/4",  "duration" : "w",  "stem": "hide", "text" : "i"},
+        { "key": "g/4",  "duration" : "q",  "stem": "hide"},
+        { "key": "b/4",  "duration" : "q",  "stem": "hide"},
+        { "key": "a/4",  "duration" : "h",  "stem": "hide", "text" : "i"}
+      ]},{"notes" : [
+        { "key": "a/4",  "duration" : "w",  "stem": "hide", "text" : "v6"},
+        { "key": "g/4",  "duration" : "q",  "stem": "hide"},
+        { "key": "f/4",  "duration" : "q",  "stem": "hide"},
+        { "key": "d/4",  "duration" : "h",  "stem": "hide", "text" : "i"}
+    ] }
+
+    ]}    
 
 ]
