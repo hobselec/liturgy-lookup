@@ -241,7 +241,7 @@
       ]
     },
 
-    { "id" : 15, "name" : "Lam of God", "source" : "All Creation Sings", "page" : "905", "score" :
+    { "id" : 15, "name" : "Lamb of God", "source" : "All Creation Sings", "page" : "905", "score" :
       [{"key": "F", "notes" :  
         [{"key": "f/4", "duration" : "8", "text" : "Lamb"},
         {"key": "g/4", "duration" : "8", "text" : "of"},
@@ -275,7 +275,7 @@
       ]
     },
 
-    { "id" : 17, "name" : "Psalm tone 5", "source" : "ELW", "page" : "215?", "score" :[
+    { "id" : 17, "name" : "Psalm tone 5", "source" : "ELW", "page" : "215", "score" :[
       {"key": "E", "notes" : [
         { "key": "a/4",  "duration" : "w",  "stem": "hide", "text" : "i"},
         { "key": "g/4",  "duration" : "q",  "stem": "hide"},
@@ -305,6 +305,84 @@
         { "key": "f/4", "duration" : "q", "text" : "way"},
         { "key": "g/4", "duration" : "q", "text" : "the"}
         ]}]
+    },
+
+    { "id" : 19, "name" : "Psalm tone #9", "source" : "ELW", "page" : "216", "score" :[
+      {"key": "F", "notes" : [
+        { "key": "a/4",  "duration" : "w",  "stem": "hide", "text" : "i"},
+        { "key": "g/4",  "duration" : "q",  "stem": "hide"},
+        { "key": "b/4",  "duration" : "q",  "stem": "hide"},
+        { "key": "a/4",  "duration" : "h",  "stem": "hide", "text" : "i"}
+      ]},{"notes" : [
+        { "key": "a/4",  "duration" : "w",  "stem": "hide", "text" : "v6"},
+        { "key": "g/4",  "duration" : "q",  "stem": "hide"},
+        { "key": "f/4",  "duration" : "q",  "stem": "hide"},
+        { "key": "d/4",  "duration" : "h",  "stem": "hide", "text" : "i"}
+    ] }
+
+    ]},
+
+    {
+      "id": 20, "name" : "Kyrie", "firstLine" : "Have mercy on us, Lord", "source": "ELW setting 10", "page" : "167?", "score" : [
+        {"key": "G", "notes" : [
+          {"key": "e/4", "duration" : "q", "text" : "Have"}]},
+          {"notes" : [
+          {"key": "g/4", "duration" : "q", "text" : "Mer -"},
+          { "key": "g/4", "duration" : "q", "text" : "cy"},
+          { "key": "f/4", "duration" : "q", "text" : "on"},
+          { "key": "f/4", "duration" : "q", "text" : "us,"}]},
+          {"notes" : [
+            {"key": "e/4", "duration" : "h", "dots" : 1, "text" : "Lord"}
+          ]}
+        ]
+    },
+    {
+      "id": 21, "name" : "Hymn of Praise", "firstLine" : "Glory be to God in Heaven", "source": "ELW setting 10", "page" : "168?", "score" : [
+        {"key": "G", "notes" : [
+          { "key": "b/4",  "duration" : "q", "text" : "Glo -"},
+          { "key": "b/4",  "duration" : "q", "text" : "ry"},
+          { "key": "c/5",  "duration" : "q", "text" : "be"},
+          { "key": "d/5",  "duration" : "q", "text" : "to"}
+        ]},{"notes" : [
+          { "key": "d/5",  "duration" : "q", "text" : "God"},
+          { "key": "c/5",  "duration" : "q", "text" : "in"},
+          { "key": "b/4",  "duration" : "q", "text" : "heav -" },
+          { "key": "a/4",  "duration" : "q", "text" : "en"}
+      ] }
+      ]
+    },
+    {
+      "id": 22, "name" : "Gospel Acclamation", "firstLine" : "Alleluia! Lord and Savior", "source": "ELW setting 10", "page" : "168?", "score" : [
+        {"key": "Bb", "notes" : [
+          { "key": "b/3",  "duration" : "q", "dots" : 1, "text" : "Al -"},
+          { "key": "c/4",  "duration" : "8", "text" : "le -"},
+          { "key": "d/4",  "duration" : "q", "text" : "lu -"},
+          { "key": "b/3",  "duration" : "q", "text" : "ia!"}
+        ]},{"notes" : [
+          { "key": "d/4",  "duration" : "q", "text" : "Lord"},
+          { "key": "e/4",  "duration" : "q", "text" : "and"},
+          { "key": "f/4",  "duration" : "q", "text" : "sav -"},
+          { "key": "f/4",  "duration" : "h", "text" : "ior:"}
+      ] }
+      ]
+    },
+    {
+      "id": 23, "name" : "Lamb of God", "firstLine" : "O Lamb of God", "source": "ELW setting 10", "page" : "168?", "score" : [
+        {"key": "F", "notes" : [
+          {"key": "c/4", "duration" : "h", "text" : "O"}
+        ]}, 
+        { "notes" : [
+        {"key": "f/4", "duration" : "q", "text" : "Lamb"},
+        {"key": "g/4", "duration" : "q", "text" : "of"},
+        {"key": "a/4", "duration" : "h", "text" : "God,"},
+        {"key": "g/4", "duration" : "h", "text" : "you"}
+        ]}, 
+        { "notes" :  
+        [{"key": "f/4", "duration" : "q", "text" : "bear"},
+        {"key": "d/4", "duration" : "q", "text" : "the"},
+        { "key": "c/4", "duration" : "h", "text" : "sin"}
+        ]}
+        ]
     }
 
 ]

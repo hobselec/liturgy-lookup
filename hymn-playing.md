@@ -13,6 +13,10 @@ Do not use the 2' flute with principal stops.
 
 ## Combination Action
 
+::: danger Warning
+Memory is lost shortly after organ is powered-off!  Needs repair.
+:::
+
 Please use any memory levels besides #4.
 
 To store a preset, choose a memory level.  Choose stops.  Hold the set button, then the piston, then release in the opposite order.

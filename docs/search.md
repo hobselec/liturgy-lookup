@@ -1,3 +1,0 @@
-# Hymn Search
-
-<HymnSearch />
