@@ -33,7 +33,7 @@ export default defineConfig({
     ],
 
     footer : {
-      message : "Last updated May 21, 2023"
+      message : "Last updated May 28, 2023"
     }
   }
 })
