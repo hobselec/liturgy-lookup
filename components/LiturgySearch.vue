@@ -3,12 +3,13 @@
   <div>
 <label>
       Search Liturgy: 
-      <input type="text" v-model="query" />
+      <input type="text" v-model="state.query" />
     </label>
-    <div v-for="result in results" :key="result.id" class="music-result">
+    <div v-for="result in state.results" :key="result.id" class="music-result">
         <code>{{ result.name }}</code>
         <code>from {{ result.source }}, page {{ result.page }}</code>
-        <vex-flow :measures="result.score" :score-id="result.id" :system-width="700" />
+        <!--<VexFlow :measures="result.score" :score-id="result.id" :system-width="700" />
+        -->
         
     </div>
     
@@ -16,35 +17,28 @@
 
 </template>
 
-<script>
+<script setup>
 
-import VexFlow from './VexFlow.vue'
-import Liturgy from '../src/liturgy.json';
+import { reactive, computed } from 'vue'
 
-export default {
-  name: 'LiturgySearch',
-  data() {
-    return {
+//import VexFlow from './VexFlow.vue'
+
+//import Liturgy from '../src/liturgy.json';
+
+
+  const state = reactive({
       query : '',
-      options : Liturgy
-    }
-  },
-  components : {
-    VexFlow
-  },
-  props : {
-  },
-  computed : {
+      options : [], //Liturgy,
 
-      results() {
+      results : computed(() => {
           var results = [];
 
-          if(this.query.length < 2)
+          if(state.query.length < 2)
             return [];
 
-          for(let line of this.options)
+          for(let line of state.options)
           {
-              var result = line.name.search(new RegExp(this.query, "i"));
+              var result = line.name.search(new RegExp(state.query, "i"));
 
               if(result != -1)
                 results.push(line);
@@ -52,17 +46,11 @@ export default {
           }
 
           return results;
-      }
-  },
-  methods : {
-      testIt() {
-       
+      })
+})
 
 
-      }
-  }
 
-}
 </script>
 <style scoped>
 .music-result { 
