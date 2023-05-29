@@ -8,8 +8,8 @@
     <div v-for="result in state.results" :key="result.id" class="music-result">
         <code>{{ result.name }}</code>
         <code>from {{ result.source }}, page {{ result.page }}</code>
-        <!--<VexFlow :measures="result.score" :score-id="result.id" :system-width="700" />
-        -->
+        <vex-flow :measures="result.score" :score-id="result.id" :system-width="700" />
+        
         
     </div>
     
@@ -21,14 +21,13 @@
 
 import { reactive, computed } from 'vue'
 
-//import VexFlow from './VexFlow.vue'
+import VexFlow from './VexFlow.vue'
 
-//import Liturgy from '../src/liturgy.json';
-
+import Liturgy from '../src/liturgy.json';
 
   const state = reactive({
       query : '',
-      options : [], //Liturgy,
+      options : Liturgy,
 
       results : computed(() => {
           var results = [];
