@@ -9,7 +9,7 @@
 // set note spacing?
 // setExtraLeftPx()
 
-import { Vex, Stave, StaveNote, Formatter, Dot } from 'vexflow'
+import { Vex, Dot } from 'vexflow'
 
 const VF = Vex.Flow;
 
